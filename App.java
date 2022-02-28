@@ -126,7 +126,7 @@ public class App implements ActionListener {
 
     public static void main(String[] args) throws Exception {
         Class.forName("com.mysql.jdbc.Driver");
-        Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/student", "root", "Alfi@123");
+        Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/student", "root", "password");
 
         Statement statement = con.createStatement();
         ResultSet resultSet = statement.executeQuery("SELECT * FROM students;");
